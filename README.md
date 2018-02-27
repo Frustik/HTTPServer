@@ -1,9 +1,24 @@
-# libevent_test_http_srv
-C++ http server samples based on libevent
+#Лабораторная работа #7 – простейший web-сервер своими руками на С++
 
-## Posts about libevent_test_http_srv
-- [Lightweight HTTP Server in less than 40 Lines on libevent and C++11](https://kukuruku.co/post/lightweight-http-server-in-less-than-40-lines-on-libevent-and-c-11/)  
-- [Свой http-сервер менее чем в 40 строк кода на libevent и C++11](https://habrahabr.ru/post/217437/)  
+Цель: Изучить возможности языка программирования С++ для построения настоящего веб-приложения.
 
-**NOTE:**  
-The [MIF](https://github.com/tdv/mif) project includes as part a some ideas from this test project for http transport demonstrated in [http](https://github.com/tdv/mif/tree/master/examples/http) example.  
+1.	Был создан новый git-репозиторий “HTTPServer” в личном кабинете github.
+2.	В созданный репозиторий подключены данные из https://github.com/tdv/libevent_test_http_srv и клонирован проект в рабочий каталог на своем сервере
+3.	Далее был настроен vscode для работы с проектом:
+Были созданы файлы через запуск задач:
+a)	tasks.json – конфигурация для компиляции первого примера
+Пример задачи компиляции:
+{
+            "label": "sample1",
+"type": "shell",
+            "command": "g++ sample1/main.cpp -std=c++11 -levent -o sample1.exe",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+}
+b)	launch.json – конфигурация для запуска веб-приложения
+
+4.	Скомпилировано и запущено веб-приложение
+
+
